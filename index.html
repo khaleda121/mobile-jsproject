@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+           <!-----------bootstrap css --------->
+           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+           <!--------------google font ---------->
+           <link rel="preconnect" href="https://fonts.    googleapis.com">
+           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+           <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,600&  family=Poppins:ital@1&family=Roboto:ital,wght@1,400;1,700&display=swap"rel="stylesheet">
+             <!-----------css link --------->
+             <link rel ="stylesheet" href ="styls.css">
+
+            <title> Mobile Store</title>
+</head>
+<body>
+ 
+          <!-------search field section--------->
+ <section>
+           <h1 class="text-center pt-5 fw-bold"> Mobile Store </h1>
+                 <div class="input-group mb-3 w-50 mx-auto">
+                      <input id="search-field" type="text" class="form-control text-center " placeholder="Search Phone name here... " aria-label="Recipient's username" aria-describedby="button-addon2">
+                     <button onclick="searchPhone()"  class="btn btn-outline-light fw-bolder ms-2" type="button" >Search</button>
+                </div>
+                <h5 id="error-message" class="display-handle text-center w-75 mx-auto">Not found..! Press authentic data...</h5>
+ </section>
+
+  <!-- display products details   -->
+  <section id="show-details" class="container">
+          <!-- inject details here  -->
+         </section>
+
+
+   <!-------------result display section --------->
+ <section class="container pt-5">
+           <div id="show-Result" class=" row row-cols-1 row-cols-md-3 g-4">
+              
+           </div>
+          
+ </section>
+ 
+
+  <section>
+          <div class="d-flex justify-content-center">
+                    <button style="color: white; background-color:#ff2e09; border-radius: 8px;" id="show-all-Button" class="display-handle" type="button" class="btn btn-primary">Show All</button>
+                  </div>
+ </section>
+
+
+
+          
+          <!---------link with js------>
+          <script src="app.js"></script>
+
+          <!--  bootstrap script -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+          
+</body>
+</html>
